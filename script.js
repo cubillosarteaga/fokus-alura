@@ -59,7 +59,7 @@ function cambiarContexto(contexto){
 
 
 	html.setAttribute('data-contexto', contexto)
-	banner.setAttribute('src',`/imagenes/${contexto}.png`)
+	banner.setAttribute('src',`imagenes/${contexto}.png`)
 
 	switch (contexto) {
 	case "enfoque":
@@ -109,7 +109,7 @@ function iniciarOpausar() {
     audioPlay.play();
     idIntervalo = setInterval(cuentaRegresiva, 1000);
     textoIniciarPausar.textContent = "Pausar";
-    iconoPausa.setAttribute('src', `/imagenes/pause.png`);
+    iconoPausa.setAttribute('src', `imagenes/pause.png`);
    
 }
 
@@ -117,7 +117,7 @@ function reiniciar() {
     clearInterval(idIntervalo);
     idIntervalo = null;
     textoIniciarPausar.textContent = "Comenzar"
-    iconoPausa.setAttribute('src', `/imagenes/play_arrow.png`);
+    iconoPausa.setAttribute('src', `imagenes/play_arrow.png`);
 }
 
 function cambiarIcono(){
